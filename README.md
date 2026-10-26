@@ -11,8 +11,6 @@ Results of the reference runs of the [Ballot Front Finder Lab](https://github.co
 
 Every election depends only on its parameters, seed and number, so the commands in reference-runs.md, run with the lab at the recorded commit, recreate the full results.
 
-The election data is not included in this repo due to the amount of data (~1.9 GiB). I can be made available if needed.
-
 ## License
 
 The results and texts in this repository are licensed under [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/). The lab itself is free software under the GNU GPL v3 (see its repository).
