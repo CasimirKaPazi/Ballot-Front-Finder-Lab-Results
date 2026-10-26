@@ -1,0 +1,2 @@
+python analyze.py ../bffl-runs/base ../bffl-runs/base-rest ../bffl-runs/max-score --show rated hybrid median-based Smith//Score 'Score runoff' --out ../bffl-runs/max-score
+simulator version 1.0.0, started 2026-10-25 21:47:14

@@ -1,0 +1,2 @@
+python analyze.py ../bffl-runs/vsesim
+simulator version 1.0.0, started 2026-10-25 21:48:58

@@ -1,0 +1,2 @@
+python run.py --exits 1 --clones 2 --lazy 0.1 --poll-size 9 --cand-dispersion 0.5 --elections 1000 --methods extended --out ../bffl-runs/hard
+simulator version 1.0.0, started 2026-10-25 12:37:24

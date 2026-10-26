@@ -1,0 +1,4 @@
+python sweep.py --cands 4 5 7 8 9 10 --elections 500 --methods extended --out ../bffl-runs/candidates
+simulator version 1.0.0, started 2026-10-25 00:56:46
+python sweep.py --cands 4 5 7 8 9 10 --elections 700 --methods extended --out ../bffl-runs/candidates --resume
+simulator version 1.0.0, started 2026-10-25 18:39:29

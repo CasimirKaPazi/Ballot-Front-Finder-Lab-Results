@@ -1,0 +1,2 @@
+python sweep.py --model clusters field ks --elections 1000 --methods extended --out ../bffl-runs/models
+simulator version 1.0.0, started 2026-10-24 16:07:18

@@ -1,0 +1,2 @@
+python run.py --exits 1 --clones 2 --elections 1000 --methods extended --out ../bffl-runs/nomination
+simulator version 1.0.0, started 2026-10-24 15:17:24

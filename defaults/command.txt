@@ -1,0 +1,2 @@
+python run.py --out ../bffl-runs/defaults
+simulator version 1.0.0, started 2026-10-23 17:51:07

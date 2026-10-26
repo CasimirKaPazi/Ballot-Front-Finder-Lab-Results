@@ -1,0 +1,2 @@
+python analyze.py ../bffl-runs/base ../bffl-runs/utility
+simulator version 1.0.0, started 2026-10-25 21:33:55

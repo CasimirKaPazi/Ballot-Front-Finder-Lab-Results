@@ -1,0 +1,2 @@
+python sweep.py --rounds 1 2 4 5 6 --elections 1000 --methods extended --out ../bffl-runs/rounds
+simulator version 1.0.0, started 2026-10-24 09:43:03

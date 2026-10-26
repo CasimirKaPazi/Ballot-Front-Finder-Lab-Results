@@ -1,0 +1,4 @@
+python sweep.py --max-score 9 99 --elections 1000 --methods rated hybrid median-based Smith//Score 'Score runoff' --out ../bffl-runs/max-score
+simulator version 1.0.0, started 2026-10-24 13:45:11
+python sweep.py --max-score 9 99 --elections 2000 --methods rated hybrid median-based Smith//Score 'Score runoff' --out ../bffl-runs/max-score --resume
+simulator version 1.0.0, started 2026-10-25 14:10:34

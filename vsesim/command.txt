@@ -1,0 +1,2 @@
+python sweep.py --model ks-quinn --utility linear --strategic 0.5 1 --adaptive 0 --rounds 1 --voters 40 --elections 15000 --max-score 10 --methods 321 STAR Score Approval 'Ranked Pairs' Schulze IRV MJ MAV Borda Plurality --out ../bffl-runs/vsesim
+simulator version 1.0.0, started 2026-10-23 21:16:16

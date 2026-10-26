@@ -1,0 +1,2 @@
+python run.py --samples 5 --elections 1000 --methods extended --out ../bffl-runs/samples
+simulator version 1.0.0, started 2026-10-25 08:41:13

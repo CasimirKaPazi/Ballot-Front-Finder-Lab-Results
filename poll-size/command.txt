@@ -1,0 +1,2 @@
+python run.py --samples 5 --poll-size 9 --elections 1000 --methods extended --out ../bffl-runs/poll-size
+simulator version 1.0.0, started 2026-10-25 11:04:23

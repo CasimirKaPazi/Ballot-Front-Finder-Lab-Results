@@ -1,0 +1,2 @@
+python sweep.py --lazy 0.1 0.5 --elections 1000 --methods extended --out ../bffl-runs/laziness
+simulator version 1.0.0, started 2026-10-24 12:20:35

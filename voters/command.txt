@@ -1,0 +1,2 @@
+python run.py --voters 49 --elections 1000 --methods extended --out ../bffl-runs/voters
+simulator version 1.0.0, started 2026-10-25 11:49:39

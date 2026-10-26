@@ -1,0 +1,2 @@
+python sweep.py --aggressive 0 1 --elections 1000 --methods extended --out ../bffl-runs/aggressive-kind
+simulator version 1.0.0, started 2026-10-25 07:20:11

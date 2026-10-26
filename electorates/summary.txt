@@ -1,0 +1,40 @@
+300 electorates per model, seed 1
+
+clusters:
+  dimensions drawn          median 6 (range 6–6)
+  components for 70%        median 3 (range 2–4); first two explain 58% (median)
+  Condorcet winner          96.3% of elections; also the utility winner in 75.4% of those
+  VSE lost electing it      9.4% (ratio of sums, as VSE)
+  favourite ÷ least liked   7.80 (median voter)
+
+noise:
+  dimensions drawn          median 6 (range 6–6)
+  components for 70%        median 3 (range 1–4); first two explain 65% (median)
+  Condorcet winner          97.0% of elections; also the utility winner in 67.7% of those
+  VSE lost electing it      13.3% (ratio of sums, as VSE)
+  favourite ÷ least liked   8.02 (median voter)
+
+ks:
+  dimensions drawn          median 2 (range 1–6)
+  components for 70%        median 1 (range 1–3); first two explain 100% (median)
+  Condorcet winner          99.7% of elections; also the utility winner in 78.9% of those
+  VSE lost electing it      5.8% (ratio of sums, as VSE)
+  favourite ÷ least liked   6.02 (median voter)
+
+field:
+  dimensions drawn          median 6 (range 6–6)
+  components for 70%        median 5 (range 4–5); first two explain 37% (median)
+  Condorcet winner          99.7% of elections; also the utility winner in 93.3% of those
+  VSE lost electing it      0.4% (ratio of sums, as VSE)
+  favourite ÷ least liked   4.23 (median voter)
+
+Space from approval ballots (--sav): 100 electorates of 1000 voters per model, 6 candidates, approval noise 1.0
+  cumulative inertia explained by 1, 2, 3, 4 dimensions (median, %); for comparison, Alós-Ferrer & Granić 2015:
+    Messel, 9 parties         36.8   54.0   65.5   75.6
+    Konstanz, 11 parties      24.2   45.1   57.4   66.8
+    Messel, 8 candidates      35.5   58.3   72.6   83.6
+    Konstanz, 6 candidates    54.0   91.4   98.3  100.0
+    clusters                  54.5   84.3   98.3  100.0   dims for 70%: median 2; positive eigenvalues: median 4; elections with a pair nobody approves together: 0%
+    noise                     63.5   88.4   98.7  100.0   dims for 70%: median 2; positive eigenvalues: median 4; elections with a pair nobody approves together: 0%
+    ks                        66.1   88.7   97.2  100.0   dims for 70%: median 2; positive eigenvalues: median 4; elections with a pair nobody approves together: 0%
+    field                     49.8   81.5   98.7  100.0   dims for 70%: median 2; positive eigenvalues: median 4; elections with a pair nobody approves together: 0%

@@ -1,0 +1,2 @@
+python sweep.py --strategic 0.5 1 --adaptive 0 --elections 1000 --methods extended --out ../bffl-runs/strategic-share
+simulator version 1.0.0, started 2026-10-24 00:27:00
