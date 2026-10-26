@@ -78,7 +78,9 @@ That makes 37 conditions. All runs use seed 1, so the tests face the base's firs
 
 ## 4 Results across All Conditions
 
-### 4.1 The leading methods are close; they differ in where they sit on the trade-off
+![Base run with 35 methods](base/analysis/arrows-c1.png)
+
+### 4.1 The Leading Methods Are Close; They Differ in where They Sit on the Trade-off
 
 Over the 37 conditions, about twenty methods are within 1 point of the front (on VSE\* and WME\* at once) in nearly every condition they were run in: Score runoff, the Condorcet and minimax methods, the Soft Minimax family, BTR-score, Smith//Score, STAR, ARA, MARS, Geometric median, ESR. What separates them is less how good they are than which mix of VSE and WME they deliver.
 
@@ -111,7 +113,7 @@ Of the other methods, only Approval runoff is undominated anywhere (in one condi
 - **Clearly off the front:** every plurality-based method including IRV, and TTR and Approval. They are within 2 points of the front in at most 10% of the conditions.
 - **Close behind:** 321, MAV, MJ, Borda, Approval runoff and Approval cond. runoff. They are within 2 points in 50–94% of the conditions, but within 1 point in only 6–48%.
 
-### 4.2 Who clearly dominates whom
+### 4.2 Who Clearly Dominates Whom
 
 The figure orders the methods by clear dominance over all conditions. An arrow A → B means that A dominates B in at least half of the conditions both were run in, and more often than B dominates A. Arrows implied by a chain of others are left out, so every method is dominated, at this level, by everything above it along the arrows. The shares are in `comparison/report.md` and `comparison/beatpath.csv`.
 
@@ -126,7 +128,7 @@ The figure orders the methods by clear dominance over all conditions. An arrow A
 - **The rated methods sit in the middle.** Geometric median is dominated by ESR (71%). Score is dominated by STAR, ESR, Smith//Score and Soft Minimax-D (50–59%), and DMS by Score (57%). Their high VSE does not protect them from methods that are about as good on VSE and clearly better on WME.
 - **Further down**, in this order: Borda, the median-based methods (MAV, MJ), then the IRV variants and Approval, then TTR and Supplementary vote, and Plurality at the bottom, dominated by Supplementary vote in 88% of the conditions.
 
-### 4.3 Score runoff is the most robust single method
+### 4.3 Score Runoff is the Most Robust Single Method
 
 Score runoff (scores in round one, a real runoff between the two highest-scoring candidates) is undominated in 28 of its 35 conditions and within 1 point of the front in all. It combines a WME\* close to the Condorcet methods' (mean 97.5 against about 99) with the sincerity of score ballots, and its Condorcet efficiency with strategic ballots is 96.0% in the base (Condorcet methods: 95.5–98.0%).
 
@@ -141,7 +143,7 @@ It is dominated in seven conditions:
 
 Each of these is examined in the section of its test.
 
-### 4.4 Condorcet methods sit at the corner of what any rule can reach
+### 4.4 Condorcet Methods Sit at the Corner of what Any Rule Can Reach
 
 In the base (2000 elections), the reachable region is bounded by VSE 83.1–83.4 at the best WME (electing the candidate with the best worst margin) and by the balanced point VSE 94.4 / WME 95.9. Ranked pairs, Schulze and Kemeny-Young reach VSE\* 83.2–83.5 at WME\* 99.3–99.4: practically that corner, even with strategic voters.
 
@@ -149,7 +151,7 @@ At the other end, Geometric median reaches VSE\* 90.3, against at most 90.5 for 
 
 In between, the hybrids fall short of the reachable frontier: Smith//Score has VSE\* 87.3 at WME\* 96.1, while a rule knowing the utilities reaches VSE 94.4 at about the same WME. Most of this gap is what score ballots cannot carry: in the arrow plot of `overview-all-methods`, the line of normalized ballots runs at about VSE 89.5 at WME 96 and about 88.5 at WME 98 (read off the plot). The hybrids are 1–2.5 points short of it, Score runoff about 3. The methods of the front thus lie close to what their ballots allow, all along the front: the Condorcet methods at the corner of the reachable region, the rated methods at the end of the normalized-ballot line, the hybrids and Score runoff a little inside that line.
 
-### 4.5 With adaptive voters, strategy changes little for the good methods and helps the weak ones
+### 4.5 With Adaptive Voters, Strategy Changes Little for the Good Methods and Helps the Weak Ones
 
 From honest to strategic ballots in the base:
 
@@ -169,7 +171,7 @@ The good methods move by at most 2 points. Plurality-based methods gain: comprom
 
 How much a different strategy model changes this is the subject of the strategy tests.
 
-### 4.6 Manipulation from honest ballots: Condorcet methods hold, but counter-strategy is needed
+### 4.6 Manipulation from Honest Ballots: Condorcet Methods Hold, but Counter-strategy is Needed
 
 The manipulation test (base, extended set) asks how often an informed coalition can change the result in its favour from honest ballots, and what that does to VSE:
 
@@ -178,11 +180,11 @@ The manipulation test (base, extended set) asks how often an informed coalition 
 
 So the methods resist manipulation mainly because the attacked side can answer, which is what the poll rounds simulate.
 
-### 4.7 Rated ballots hide the Condorcet winner more often than strategy does
+### 4.7 Rated Ballots Hide the Condorcet Winner More Often than Strategy Does
 
 In the base, rated ballots show the real Condorcet winner in about 88% of the elections with one, with strategic and with honest ballots alike: the 0–5 scale's ties and rounding alone hide or falsify it in about 12%. Rankings show it in 100% honestly and 95–97% after strategy. A study of real score or grade ballots would see a false Condorcet winner in about 9% of elections from the format alone.
 
-### 4.8 Sample size: the default run as an example
+### 4.8 Sample Size: the Default Run as an Example
 
 The default run (200 elections, standard set) finds Score, Score runoff and MMPO undominated. In the base (2000 elections, same first 200), Score is dominated by Smith//Score and others on WME\*. With 200 elections the intervals are about ±4 points on VSE\*, so fewer differences are clear: the default run is an example to compare one's own runs with, not a result.
 
@@ -211,7 +213,7 @@ Pairs asked for in the comparison show how the simple methods relate, which matt
 
 The tests have 1000 elections, the first 1000 of the base's 2000. Their honest values therefore differ slightly from the base's (Score: honest VSE 89.9 against 90.2), so changes are read as the cost of strategy within each condition (honest minus strategic) or between the tests. The noise reference for rank stability in the reports is that of the 2000-election base; a test with 1000 elections can fall a little below it from noise alone.
 
-### Who strategises
+### Who Strategises
 
 The base has adaptive voters: each is strategic in a round when the race between the two leaders matters enough to them, which is the case for about 43% of them. The test replaces them with a fixed share of always-strategic voters, half or all.
 
@@ -237,7 +239,7 @@ VSE\* / WME\* / sincerity. Honest VSE on the tests' elections: Geometric median 
   - Undominated: only **Soft Minimax and BTR-score**, two score–pairwise hybrids. Soft Minimax dominates Score runoff here, and no rated method is left undominated.
 - Plurality gains with more strategy: compromise is what makes it work at all.
 
-### Kind or aggressive
+### Kind or Aggressive
 
 In the base, half the strategic voters are aggressive (they exaggerate whenever it cannot hurt them in the polls), half kind (only for a clear gain). The test makes them all kind or all aggressive.
 
@@ -248,7 +250,7 @@ In the base, half the strategic voters are aggressive (they exaggerate whenever 
   - With aggressive voters, the front is wide (12 undominated methods, Condorcet, minimax, hybrid and Score runoff alike).
 - Plurality does worse with kind voters (VSE\* 73.8, against 82.3 with aggressive ones): fewer voters compromise.
 
-### Poll rounds
+### Poll Rounds
 
 The rounds test reports one run after 1, 2, 4, 5 and 6 rounds (the base has 3), so the rounds are successive states of the same elections, not separate samples.
 
@@ -257,7 +259,7 @@ The rounds test reports one run after 1, 2, 4, 5 and 6 rounds (the base has 3), 
 - Plurality improves over the first rounds (VSE\* 76.8 after one, 79.6 after four) and then stays.
 - DMS rises steadily (VSE\* 89.6 after one round, 91.0 after six, above its honest 90.1). Earlier runs also found DMS's position unsteady; it is the one method that drifts.
 
-### First poll from a previous election
+### First Poll from a Previous Election
 
 Here the first poll shows the strategic result of a previous election instead of honest ballots: can the electorate leave a strategic state?
 
@@ -265,7 +267,7 @@ Here the first poll shows the strategic result of a previous election instead of
 - **Plurality, TTR and Supplementary vote end lower:** Plurality VSE\* 75.2, against about 79.5 after the same number of rounds from honest polls (rounds test), TTR 82.2, Supplementary vote 81.4. The previous strategic state persists there.
 - Undominated: MARS-T, Soft Minimax, Score runoff and the Condorcet and minimax methods.
 
-### Fewer poll samples
+### Fewer Poll Samples
 
 The samples run used 5 polls per round instead of 10, with the default 3 rounds (not 6 rounds as in reference-runs.md): less poll information than in the base.
 
@@ -273,7 +275,7 @@ The samples run used 5 polls per round instead of 10, with the default 3 rounds 
 - The order of the methods is close to the base's (rank correlation 0.95 on VSE\*, 0.97 on WME\*). The undominated methods: ESR, Soft Minimax, Score runoff and the Condorcet and minimax methods.
 - Since the polls take a large part of the running time, 5 polls per round (or a value between 5 and 10) would serve as well and save time. That would change the default, and every result with it, so it is for a later version of the lab.
 
-### Smaller polls
+### Smaller Polls
 
 The poll-size run uses polls of 9 voters instead of 49, with 5 polls per round; it is compared with the samples run, which differs from it only in poll size. VSE\* / WME\* (honest VSE in the first column):
 
@@ -296,7 +298,7 @@ The poll-size run uses polls of 9 voters instead of 49, with 5 polls per round; 
 - **The Condorcet and minimax methods lose 0.6–1.8 points of WME\*** (Ranked pairs 99.1 → 97.9) and are then dominated by Score runoff (VSE\* and sincerity). Undominated: ARA, MARS, STAR, Score runoff.
 - **How much poll information is realistic** is an open question, discussed in section 10.2.
 
-### What the strategy tests show together
+### What the Strategy Tests Show together
 
 - **Score runoff or the Condorcet methods, usually both, are undominated under every strategy model tested except full strategy.** Kind voters tip the balance to the Condorcet methods; with all voters strategic, only the score–pairwise hybrids Soft Minimax and BTR-score remain undominated.
 - **For the good methods, the amount of strategy matters more than its timing or information.** Rounds, poll samples, poll size and the starting poll change little. A fixed share of always-strategic voters changes a lot, and full strategy reorders the methods.
@@ -314,7 +316,7 @@ With laziness λ, honest ballots are truncated: each voter ranks, approves or sc
 - **Score ballots hardly change**, since a blank counts as 0, close to what a lazy voter would give anyway: Score 89.7 / 91.2, Geometric median 89.8 / 89.2.
 - **At 0.5, Score runoff keeps the highest WME\* of all methods** (VSE\* 86.3 / WME\* 97.4), about 2 points above the Condorcet methods. Undominated: Score runoff, ARA, Smith//Score and Soft Minimax; none of the Condorcet methods. The order of the methods changes clearly (rank correlation with the base on VSE\* 0.72).
 
-### Score range
+### Score Range
 
 Scores 0–9 and 0–99 instead of 0–5, for the methods with score ballots (rated, hybrid, median-based, Smith//Score, Score runoff). The other methods do not read scores, so they were not run again; their values are those of the base. VSE\* / WME\*:
 
@@ -342,7 +344,7 @@ Scores 0–9 and 0–99 instead of 0–5, for the methods with score ballots (ra
 - **Pure rated methods change little.** Score's cost of strategy falls (honest 90.2 on 0–5 and 90.5 on 0–99; strategic 88.4 and 89.7), and ESR loses a little VSE on the fine scale (89.1 → 87.8).
 - The order of the methods changes clearly at 0–99 (rank correlation with the base: VSE\* 0.83, WME\* 0.91, against 0.94 and 0.98 from noise for these methods), not at 0–9 (0.94 and 0.99).
 
-### Strategic nomination
+### Strategic Nomination
 
 Before the vote, candidates may withdraw (exits 1) or field up to two clones (clones 2) when that helps them (after Green-Armytage 2014). VSE and WME are judged on the original field.
 
@@ -368,7 +370,7 @@ Exits and clones: average number per election at the end.
 - **Plurality profits from exits:** its honest VSE rises from 67.4 to 72.6 as spoilers withdraw; IRV's honest WME rises from 88.2 to 95.3.
 - Undominated: ARA, Soft Minimax, BTR-score and the Condorcet and minimax methods (Ranked pairs, Schulze, Kemeny-Young, MMWV, MMPO). The order of the methods changes clearly (rank correlation with the base on VSE\* 0.72).
 
-### What the ballot tests show together
+### What the Ballot Tests Show together
 
 - **The front's middle depends on the score scale.** On 0–5, the score–pairwise hybrids lie between the Condorcet and the rated methods. On 0–99, most of them become Condorcet methods in effect, and only those whose pairwise part merely corrects the scores (ARA, Soft Minimax, MARS) stay in between.
 - **Laziness weakens the Condorcet methods; strategic nomination weakens the rated methods and Score runoff.** The Condorcet methods' strength rests on complete rankings, the rated methods' on a fixed field.
@@ -389,7 +391,7 @@ The electorate decides how strongly VSE and WME pull apart, and that sets the st
 
 The base thus has one of the sharpest conflicts between the two goals; only candidates clustered in the centre and other numbers of candidates (in the same model) have as sharp or sharper ones. In most other electorates, the candidate with the best worst margin is also nearly the best for total utility.
 
-### Utility width and shape
+### Utility Width and Shape
 
 Utility falls exponentially with distance in the base (mode-like: the best candidate is near a dense group of voters); a wider width makes the fall-off flatter, linear utility (as in vse-sim) puts the best candidate near the median, quadratic near the mean. VSE\* / WME\*:
 
@@ -413,19 +415,23 @@ Utility falls exponentially with distance in the base (mode-like: the best candi
 - **Undominated in all four:** Soft Minimax-D and the Condorcet methods. Score runoff in three (not at width 1.4, where Soft Minimax is better on VSE\*), BTR-score at width 2.8, linear and quadratic, Soft Minimax at width 1.4 and quadratic.
 - **IRV and Plurality stay behind whatever the utility:** IRV 4–6 points of VSE\* behind the best method and 5–7 points of WME\* behind Score runoff, Plurality more than 12 and about 20.
 
-### Electorate models
+### Electorate Models
+
+![An example visualization showing the distributions that the different models create.](electorates/examples.png)
 
 - **Clusters** (Zipf dimensions, per-group salience; the Condorcet winner costs 12.2% of VSE): close to the base. Undominated: MARS, MARS-T, Score runoff, and the Condorcet methods Ranked pairs, Minimax, Schulze.
 - **Field** (scale-free opinion fields; 7.3%): Score runoff dominates the Condorcet methods (on sincerity, for some also on VSE\*; its WME\* is 98.7 against their 98.1–98.4), and only MARS, MARS-T, Soft Minimax-D and Score runoff are undominated.
 - **ks** (Quinn's hierarchical model, lab version; 7.6%): the score–pairwise hybrids lead on VSE\* (STAR, MARS, Soft Minimax-D 95.1–95.2), the rated methods fall back on WME\* (Geometric median 86.3, Score 89.6), and IRV and Plurality do badly (WME\* 83.5 and 63.0). Undominated: STAR, MARS, Soft Minimax-D, Score runoff and the Condorcet methods.
 - In none of the three is a rated method undominated.
 
-### Candidate dispersion
+### Candidate Dispersion
 
 - **Candidates clustered in the centre (0.5)** is the hardest electorate: preferences are flat (favourite ÷ least liked 3.2, against 8.0), the Condorcet winner costs 17.5% of VSE and has the highest total utility in only 55% of the elections. It gives the lowest WME\* of the whole collection for most methods: Geometric median 79.5, DMS 77.7, Score 83.7, Approval 65.6, IRV 73.0, Plurality 48.4. The good methods also elect a below-median candidate more often (Low\* about 6–7%, against about 3% in the base). Undominated: Geometric median, Soft Minimax-D, Smith//Score, BTR-score, Score runoff and the Condorcet methods; the full width of the front is used.
 - **Candidates spread out (2.0)** is the easiest: the Condorcet winner costs 6.3%, and even Plurality reaches VSE\* 93.0 / WME\* 93.2. The Condorcet methods bury more here (21% of the voters, sincerity 97.2), and Score runoff dominates them on sincerity alone. Undominated: MARS, Soft Minimax-D, ARA, Score runoff.
 
-### Number of candidates
+### Number of Candidates
+
+![Performance across different number of candidates. Methods grouped into types for visibility.](candidates/analysis-vs-base/chain-cands.png)
 
 4, 5, 7, 8, 9 and 10 candidates (6 in the base), 700 elections each, so the values are noisier than elsewhere and not always monotone. VSE\* / WME\*:
 
@@ -448,11 +454,11 @@ Utility falls exponentially with distance in the base (mode-like: the best candi
 - **Rated and hybrid methods gain VSE\* and lose WME\* as the field grows** (Geometric median 92.8 → 85.5 WME\*, Smith//Score 97.4 → 93.4). For the hybrids this fits the score-range result: with 10 candidates on a 0–5 ballot, more candidates share a score, and the pairwise step sees less.
 - With 4 candidates the Condorcet winner costs the most VSE (19.6%), and most methods have their lowest VSE\* of the collection there.
 
-### Number of voters
+### Number of Voters
 
 With 49 voters instead of 99, the Condorcet winner costs a little more (18.0% of VSE), and VSE\* is up to 2.3 points lower, most for the Condorcet methods (Ranked pairs VSE\* 81.2 against 83.5, WME\* 99.0), least for the rated methods (Score 88.2 against 88.4). The order of the methods is the base's (rank correlation 0.97 on VSE\* and 0.98 on WME\*, as from noise). Undominated: MARS, MARS-T, Smith//Score, Soft Minimax-D, Score runoff and the Condorcet methods (Ranked pairs, Schulze, Kemeny-Young, Minimax).
 
-### What the electorate tests show together
+### What the Electorate Tests Show together
 
 - **The size of the conflict between VSE and WME is the model's most consequential assumption.** The base's steep utility puts it at 16%; a flatter or differently shaped utility, other electorate models or spread-out candidates put it at 3–12%.
 - **Where the conflict is small, the rated methods' lead vanishes, and the front belongs to the Condorcet methods, Score runoff and a few hybrids** (Soft Minimax-D, MARS, BTR-score). Over the 16 electorate conditions, Score runoff is undominated in 15, the Condorcet methods (at least one of them) in 13, Soft Minimax-D in 11, and the rated methods (Geometric median, Score, DMS, ESR) in one (Geometric median, with candidates clustered in the centre).
@@ -485,6 +491,8 @@ The hard condition combines candidates clustered in the centre, laziness 0.1, st
 
 ## 9 The vse-sim Setting
 
+![vse-sim like results with 11 methods](vsesim/analysis/arrows-c1.png)
+
 A setting close to Jameson Quinn's vse-sim: Quinn's hierarchical model as in vse-sim's code, linear utility, 40 voters, 6 candidates, scores 0–10, one poll, a fixed share of strategic voters (half or all), vse-sim's methods; 15 000 elections each.
 
 In these electorates the conflict between VSE and WME practically vanishes: electing the Condorcet winner costs 1.1% of VSE, and some rule reaches VSE 97.0–98.8 at the best WME.
@@ -513,7 +521,7 @@ vse-sim's VSE is 0 for a random candidate, the lab's for a random ballot. With a
 
 ## 10 Discussion
 
-### 10.1 Strategic nomination is the normal case
+### 10.1 Strategic Nomination is the Normal case
 
 In the comparison, strategic nomination is one condition of 37. In real elections it is not optional: parties and candidates always decide who runs, knowing the voting method. Its weight in the counts therefore understates its importance.
 
@@ -523,7 +531,7 @@ This matters most for Score runoff, the method that does best overall:
 
 The lab's clones cost their party nothing, while a real clone needs a second credible candidate and splits a campaign, so the test may overstate the danger. Still, a method whose main strength can be undone by running a teammate is weaker in practice than its overall share suggests. The Condorcet methods, at the other extreme, are almost unaffected by nomination.
 
-### 10.2 Good information helps the weak methods
+### 10.2 Good Information Helps the Weak Methods
 
 The base's polls sample half the electorate (49 of 99 voters). With smaller polls, Plurality, IRV, TTR, Borda and to a lesser extent Approval lose much of what strategy gave them, while the good methods hardly change. Good information lets voters repair a method's faults by compromising; the base thus favours the weak methods, and the comparison under-states their real weakness where voters know less.
 
@@ -533,7 +541,7 @@ How much poll information is realistic is not settled by the share of the electo
 
 The poll-size test is therefore best read as voters with poor information, a plausible part of reality, rather than as more realistic polls.
 
-### 10.3 What the front does not measure
+### 10.3 What the front Does not Measure
 
 The front weighs total satisfaction, majority support and sincerity, and nothing else. Several properties that matter for a real choice are not measured:
 - **Simplicity** for voters (filling in the ballot), for officials (counting, recounts, adding up results from polling stations) and for the public (understanding why the winner won).
@@ -542,7 +550,7 @@ The front weighs total satisfaction, majority support and sincerity, and nothing
 
 Simplicity in particular changes the picture. Approval is never on the front, but with a ballot almost as simple as Plurality's it improves on it by about 10 points of VSE\* and 12 of WME\* (means over the conditions 87.7 / 85.7 against 77.6 / 73.4). Several methods near the front, in contrast, are hard to explain: Soft Minimax, Kemeny-Young or ESR. A method one step behind the front but much simpler may be the better practical choice. A measure of simplicity would be needed to put this on the front; the lab has none yet.
 
-### 10.4 Limits of the model
+### 10.4 Limits of the Model
 
 - **Electorates.** The electorates are spatial. Candidates differ only in their positions, not in competence or charisma, and the electorate sizes are small (40–99 voters). How strongly total satisfaction and majority support conflict depends on the utility shape (section 7), for which the evidence is thin.
 - **Strategy.** Groups of like-minded voters improve their ballots against polls; there are no campaigns, no coordination across groups and no mistakes beyond poll error.
