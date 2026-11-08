@@ -1,0 +1,2 @@
+python analyze.py ../bffl-runs/base ../bffl-runs/poll-error
+simulator version 2.1.0, started 2026-11-08 08:59:15

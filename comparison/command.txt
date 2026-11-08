@@ -1,2 +1,2 @@
-python compare.py ../bffl-runs --pairs 'Approval cond. runoff:TTR' Approval:Plurality ER-IRV:IRV BTR-score:IRV Score+:Score 'Approval cond. runoff:Approval' 'Approval runoff:Approval cond. runoff' IRV-3:TTR IRV:TTR 'TTR:Supplementary vote' 'Supplementary vote:Plurality' Smith//Score:BTR-score MARS-T:MARS
-simulator version 1.0.0, started 2026-10-25 22:02:44
+python compare.py ../bffl-runs --pairs Approval:Plurality 'Supplementary vote:Plurality' 'TTR:Supplementary vote' IRV:TTR IRV-3:TTR 'Approval cond. runoff:TTR' 'Approval cond. runoff:Approval' 'Approval runoff:Approval cond. runoff' BTR-score:IRV IMDS:INS BTR-score:Smith//Score
+simulator version 2.1.0, started 2026-11-08 11:06:26

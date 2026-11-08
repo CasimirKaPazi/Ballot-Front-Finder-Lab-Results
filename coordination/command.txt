@@ -1,0 +1,2 @@
+python sweep.py --coordination 0 0.1 0.5 --elections 2000 --methods extended --out ../bffl-runs/coordination
+simulator version 2.1.0, started 2026-11-07 12:41:45

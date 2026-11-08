@@ -1,2 +1,2 @@
-python run.py --start previous --elections 1000 --methods extended --out ../bffl-runs/lockin
-simulator version 1.0.0, started 2026-10-24 11:24:38
+python run.py --start previous --elections 2000 --methods extended --out ../bffl-runs/lockin
+simulator version 2.1.0, started 2026-11-07 16:32:33

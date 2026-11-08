@@ -1,38 +1,41 @@
-2000 elections, 99 voters, 6 candidates, model noise: 6 dimensions, voters dense where a fractal noise is high, strength 5.0, width 0.7; 3 poll round(s), 10 polls of 49 voters, poll error 2.0x, search 10, aggressive share 0.5, strategic share 0.0, adaptive share 1.0, scores 0..5; seed 1
+4000 elections, 99 voters, 6 candidates, model noise: 6 dimensions, voters dense where a fractal noise is high, strength 5.0, width 0.7, candidates: voters who stand; 3 poll round(s), 5 polls of 49 voters, poll error 2.0x, individual voters with pooled discovery (the moves that pay for 0.25 of each type of voter, by their order of the poll's top three, counted on the polls; a voter makes one if it gains more than a cost up to 0.3 of their utility range), strategic share 0.0, adaptive share 1.0, scores 0..5, nomination: exits 1, clones 2; seed 1
 method                        VSE    WME   VSE*   WME*     CE    CE*  sincerity  settled  front
-Geometric median             91.2   90.1   90.3   90.4   79.3   79.7      99.9%      13%  *
-DMS                          90.3   89.5   89.5   90.9   79.1   80.8      99.9%      23%  *
-ESR                          89.5   93.6   89.1   93.2   85.1   84.6      99.9%      31%  *
-MAV                          89.0   87.6   88.8   90.1   77.1   80.0      99.9%      23%  
-ARA                          89.3   94.6   88.7   94.6   85.9   86.4      99.9%      29%  *
-Soft Minimax-40              89.1   94.5   88.5   94.8   85.7   86.3      99.9%      36%  *
-Score                        90.2   92.7   88.4   92.2   83.0   82.2     100.0%      22%  
-321                          88.8   90.5   88.3   91.6   81.2   82.7      99.9%      27%  
-MJ                           88.8   89.5   88.2   90.8   79.8   80.8      99.9%      21%  
-MARS-T                       88.2   95.5   87.9   95.5   87.3   87.3      99.9%      30%  *
-MARS                         87.9   95.6   87.3   95.4   87.6   87.1      99.9%      30%  
-Smith//Score                 87.1   96.2   87.3   96.1   89.1   88.8      99.9%      41%  *
-Soft Minimax-D               87.4   95.9   87.2   95.9   88.4   88.5      99.9%      35%  
-Approval                     86.0   83.5   87.0   87.5   73.3   77.4      99.9%      29%  
-STAR                         87.9   95.7   86.8   95.5   88.3   87.9      99.9%      38%  
-BTR-score                    87.0   96.2   86.7   96.3   89.3   89.2      99.9%      42%  *
-Soft Minimax                 86.9   96.3   86.5   96.1   89.4   89.3      99.9%      44%  
-Approval runoff              86.2   93.4   86.1   94.6   90.3   91.3      99.6%      37%  
-Approval cond. runoff        87.2   91.8   85.9   93.7   86.2   88.0      99.7%      28%  
-IRV-3                        85.3   86.8   85.6   91.0   80.5   84.4      98.7%      37%  
-Borda                        80.9   95.4   85.5   95.7   86.9   87.3      97.7%      13%  
-ER-IRV                       85.4   87.7   85.3   91.3   83.3   86.8      98.0%      31%  
-Score runoff                 85.3   98.3   85.2   98.0   96.5   96.0      99.9%      41%  *
-IRV                          85.4   87.7   84.9   90.8   83.3   86.1      97.6%      33%  
-Supplementary vote           80.6   79.6   84.3   84.3   70.0   74.2      97.7%      37%  
-Copeland                     82.9   99.5   83.6   98.2  100.0   96.4      97.8%      29%  *
-Ranked pairs                 83.3  100.0   83.5   99.3  100.0   98.0      97.9%      41%  *
-Kemeny-Young                 83.1  100.0   83.4   99.4  100.0   97.8      97.9%      41%  *
-TTR                          83.8   84.8   83.3   90.4   80.4   85.9      96.7%      29%  
-Schulze                      83.3  100.0   83.2   99.4  100.0   97.8      97.9%      40%  
-BTR-IRV                      83.0   99.7   83.2   98.2  100.0   95.5      97.8%      35%  
-MMWV                         83.3  100.0   83.1   99.0  100.0   97.1      98.3%      37%  
-Minimax                      83.3  100.0   82.9   99.4  100.0   97.9      97.9%      40%  
-MMPO                         83.3  100.0   82.9   99.1  100.0   97.1      98.3%      37%  
-Plurality                    69.8   69.0   79.8   76.9   61.7   68.1      98.3%      32%  
+ESR-MARS                     87.9   96.5   87.9   94.8   90.2   88.0     100.0%      30%  *
+Score runoff                 88.2   96.4   87.7   95.9   90.2   89.5      99.9%      43%  *
+ARA                          87.8   96.9   87.6   96.4   90.7   89.9     100.0%      38%  *
+MAV                          87.6   93.5   87.5   93.1   85.8   85.3     100.0%      30%  
+321                          88.0   94.5   87.4   93.3   87.4   86.0     100.0%      30%  
+Delegated 321                88.0   94.5   87.4   93.3   87.4   86.0          —      30%  
+Soft Minimax-40              87.3   96.9   87.4   96.5   91.2   90.6     100.0%      45%  *
+STAR                         87.9   96.3   87.4   95.6   90.0   88.9      99.9%      43%  
+MARS-T                       87.5   97.4   87.4   96.4   91.9   90.2     100.0%      35%  
+DMS                          88.4   94.9   87.3   92.3   86.7   84.0     100.0%      24%  
+MARS                         87.3   97.5   87.2   96.8   92.1   90.7     100.0%      35%  *
+MJ                           87.3   94.3   87.1   93.6   86.7   86.0     100.0%      28%  
+Score                        88.2   95.7   87.1   92.8   87.8   83.7     100.0%      22%  
+Approval runoff              87.1   93.2   86.9   93.5   86.8   87.2      99.9%      49%  
+ESR                          87.2   96.5   86.8   94.7   91.1   88.4     100.0%      23%  
+Soft Minimax-D               86.9   97.7   86.8   97.3   93.0   92.4     100.0%      59%  *
+Approval cond. runoff        87.1   93.1   86.5   92.8   86.4   86.4      99.9%      37%  
+BTR-score                    86.4   97.9   86.4   97.6   93.6   93.1     100.0%      55%  *
+Approval                     86.3   90.4   86.3   90.3   81.5   81.7     100.0%      37%  
+Smith//Score                 86.4   97.9   86.2   97.5   93.6   92.9     100.0%      54%  
+Soft Minimax                 86.1   98.0   86.2   97.7   93.9   93.3     100.0%      59%  *
+IMDS                         85.9   97.9   85.9   97.3   93.9   92.7     100.0%      22%  
+ER-IRV                       86.0   95.4   85.5   94.7   92.5   91.5      99.7%      43%  
+Supplementary vote           85.6   88.6   84.9   87.8   82.0   81.5      99.6%      49%  
+TTR                          85.1   94.1   84.5   93.9   91.0   90.5      98.8%      40%  
+MMWV                         84.3   99.7   84.5   99.3   98.6   97.8      99.9%      70%  *
+Ranked pairs                 84.3   99.6   84.5   99.3   98.6   97.9      99.9%      71%  *
+Schulze                      84.3   99.7   84.4   99.4   98.6   97.9      99.9%      69%  *
+MMPO                         84.3   99.7   84.4   99.3   98.6   97.7      99.9%      70%  
+Minimax                      84.3   99.7   84.4   99.3   98.6   97.9      99.9%      69%  
+BTR-IRV                      84.2   99.4   84.3   98.5   98.6   96.6      99.7%      63%  
+Kemeny-Young                 84.3   99.6   84.2   99.3   98.6   97.8      99.9%      72%  
+Copeland                     84.0   99.4   84.0   99.1   98.5   97.9      99.9%      57%  
+IRV-3                        86.3   94.3   83.8   91.4   90.2   87.4      99.2%      25%  
+IRV                          86.0   95.4   83.6   92.5   92.5   89.1      99.0%      22%  
+Asset                        82.8   86.3   82.0   85.4   76.8   76.0      99.2%      39%  
+Borda                        82.7   94.2   81.7   91.1   84.5   81.0      99.1%      18%  
+Plurality                    74.3   74.9   76.7   75.8   66.7   67.1      99.5%      33%  
 0 = random ballot, 100 = best candidate; *: with learned ballots; front on VSE*, WME*, sincerity

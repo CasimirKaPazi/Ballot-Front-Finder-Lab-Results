@@ -1,2 +1,2 @@
 python analyze.py ../bffl-runs/base ../bffl-runs/strategic-share
-simulator version 1.0.0, started 2026-10-25 21:18:42
+simulator version 2.1.0, started 2026-11-08 08:46:43

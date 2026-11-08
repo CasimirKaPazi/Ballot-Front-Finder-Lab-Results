@@ -1,0 +1,2 @@
+python compare.py ../v12combined --pairs Approval:Plurality 'Supplementary vote:Plurality' 'TTR:Supplementary vote' IRV:TTR IRV-3:TTR 'Approval cond. runoff:TTR' 'Approval cond. runoff:Approval' 'Approval runoff:Approval cond. runoff' BTR-score:IRV IMDS:INS BTR-score:Smith//Score --out output/v12combined --force-versions
+simulator version 2.1.0, started 2026-11-08 15:54:45

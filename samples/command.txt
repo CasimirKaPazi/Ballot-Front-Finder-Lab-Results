@@ -1,2 +1,2 @@
-python run.py --samples 5 --elections 1000 --methods extended --out ../bffl-runs/samples
-simulator version 1.0.0, started 2026-10-25 08:41:13
+python sweep.py --samples 10 20 --elections 2000 --methods extended --out ../bffl-runs/samples
+simulator version 2.1.0, started 2026-11-07 15:00:49

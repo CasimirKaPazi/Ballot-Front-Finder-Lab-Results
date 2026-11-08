@@ -1,2 +1,2 @@
-python run.py --elections 2000 --methods extended --manipulation --out ../bffl-runs/base
-simulator version 1.0.0, started 2026-10-23 18:07:39
+python run.py --elections 4000 --methods extended --manipulation --out ../bffl-runs/base
+simulator version 2.1.0, started 2026-11-07 09:57:52

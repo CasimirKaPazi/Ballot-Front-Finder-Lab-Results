@@ -1,0 +1,2 @@
+python run.py --exits 0 --clones 0 --elections 2000 --methods extended --out ../bffl-runs/no-nomination
+simulator version 2.1.0, started 2026-11-08 00:03:27

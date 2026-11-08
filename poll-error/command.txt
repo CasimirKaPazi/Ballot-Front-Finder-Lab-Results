@@ -1,0 +1,2 @@
+python sweep.py --poll-error 1 4 --elections 2000 --methods extended --out ../bffl-runs/poll-error
+simulator version 2.1.0, started 2026-11-07 14:19:08

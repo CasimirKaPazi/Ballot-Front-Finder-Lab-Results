@@ -1,2 +1,2 @@
-python run.py --elections 2000 --methods all --exclude extended references inverse --out ../bffl-runs/base-rest
-simulator version 1.0.0, started 2026-10-23 19:55:18
+python run.py --elections 4000 --methods all --exclude extended inverse --out ../bffl-runs/base-rest
+simulator version 2.1.0, started 2026-11-07 10:50:09

@@ -1,2 +1,2 @@
-python sweep.py --cand-dispersion 0.5 2 --elections 1000 --methods extended --out ../bffl-runs/cand-dispersion
-simulator version 1.0.0, started 2026-10-24 23:25:29
+python sweep.py --cand-dispersion 0.5 2 --elections 2000 --methods extended --out ../bffl-runs/cand-dispersion
+simulator version 2.1.0, started 2026-11-08 02:16:17
